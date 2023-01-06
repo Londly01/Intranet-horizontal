@@ -1,0 +1,3 @@
+可参考https://xz.aliyun.com/t/11099这篇文章
+
+PS：建立完CDN和域名绑定后，可以直接在CS里监听该域名，不用改CS本地key
