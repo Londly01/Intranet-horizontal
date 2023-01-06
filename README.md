@@ -1,1 +1,2 @@
-横向相关
+横向
+1.nmap在windows的cmd命令下运行，进内网时候有时候fscan扫的开放端口不全，且只有控制端权限，所以打包了一个nmap在windwos的cmd下运行的程序。
