@@ -11,3 +11,20 @@
         参数：-PR代表arp扫描，在内网中arp扫描速度最快且准确率高
     使用netdiscover扫描(arp扫描工具，既可以主动扫描也可以被动嗅探)
         netdiscover -i eth0 -r 目标IP
+        
+ 扫描主机存在的CVE漏洞
+
+    nmap --script=vuln 目标IP
+    
+    
+ 进入内网后跨网段扫描
+ 
+    推荐使用R3start师傅的工具 https://github.com/r35tart/GetIPinfo
+    
+ 进入内网对当前网段进行密码喷洒
+ 
+    推荐项目 https://github.com/maaaaz/CrackMapExecWin
+ 
+    
+
+
