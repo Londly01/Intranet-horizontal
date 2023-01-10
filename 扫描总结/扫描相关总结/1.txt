@@ -1,0 +1,21 @@
+POST /jlzhrs/powerAll/queryGrfwByParamsMap.do HTTP/1.1
+Host: zhrs.hrss.jl.gov.cn
+Cookie: _area_select=229900; JSESSIONID=hUWUMEdPmoEuarc_sKwFIbvW_ZjJ1YA2MhAAN7hHQ18TUG-t2qoC!336909745; xyack=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzMyMzIxNTgsInVzZXJuYW1lIjoiOTIyMjAxMDJNQTE1NDM4RDBYIn0.-7t9AcgJnqcjOLJtgXVmVBGpSsBfzxBrKFlprFZJk1U
+Content-Length: 89
+Sec-Ch-Ua: "Chromium";v="21", " Not;A Brand";v="99"
+Accept: application/json, text/javascript, */*; q=0.01
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Origin: https://zhrs.hrss.jl.gov.cn
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://zhrs.hrss.jl.gov.cn/jlzhrs/searchAll/page.htm?searchText=1
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Connection: close
+
+target_type=1&fwlx00=2&kbldq0=229900&slbm00=-1&areacode=2299&power_name=1&rows=10&cpage=1
