@@ -25,6 +25,7 @@
     可躲避IDS，IPS检测 KALI自带也可以下载下面的
  
     推荐项目 https://github.com/Porchetta-Industries/CrackMapExec
+    使用指南 https://fdlucifer.github.io/2020/12/14/crackmapexec/
     
    
 
