@@ -1,1 +1,13 @@
+主动扫描
 
+    ping命令扫描内网中的存活主机
+        优点:方便，一般不会引起流量检测设备的报警
+        缺点：扫描速度慢，目标开了防火墙会导致结果不准
+    nmap扫描存活主机(icmp扫描)
+        nmap -sn -PE -n -v -oN 1.txt 目标ip
+        参数： -sn 不进行端口扫描;-PE 进行icmp echo扫描;-n 不进行反向解析;-v 输出调试信息;-oN输出
+    nmap 扫描存活主机(arp扫描)
+        nmap -sn -PR -n -v 目标IP
+        参数：-PR代表arp扫描，在内网中arp扫描速度最快且准确率高
+    使用netdiscover扫描(arp扫描工具，既可以主动扫描也可以被动嗅探)
+        netdiscover -i eth0 -r 目标IP
