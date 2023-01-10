@@ -22,8 +22,9 @@
     推荐使用R3start师傅的工具 https://github.com/r35tart/GetIPinfo
     
  进入内网对当前网段进行密码喷洒
+    可躲避IDS，IPS检测 KALI自带也可以下载下面的
  
-    推荐项目 https://github.com/maaaaz/CrackMapExecWin
+    推荐项目 https://github.com/Porchetta-Industries/CrackMapExec
     
    
 
