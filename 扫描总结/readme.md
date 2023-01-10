@@ -25,7 +25,7 @@
  
     推荐项目 https://github.com/maaaaz/CrackMapExecWin
     
-    ![图片](https://user-images.githubusercontent.com/118274389/211484062-3093735b-f7cf-4d2a-8a20-fc180309f46b.png)
+   
 
  
     
