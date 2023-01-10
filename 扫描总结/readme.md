@@ -28,7 +28,7 @@
     使用指南 https://fdlucifer.github.io/2020/12/14/crackmapexec/
     
  内网扫描fscan
-    项目地址：https://github.com/shadow1ng/fscan。
+    项目地址：https://github.com/shadow1ng/fscan
     
    
 
