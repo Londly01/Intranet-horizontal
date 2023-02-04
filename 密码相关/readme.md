@@ -1,4 +1,6 @@
 
+获取明文密码
+
 Windows Server 2003、Windows Server 2008、Windows 7 都能直接获取到明文密码
 
 首先我们需要把当前系统注册表 SAM、SYSTEM 获取到
