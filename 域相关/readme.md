@@ -8,6 +8,7 @@
 方法2：拿到域成员机器怎么查看域控IP
 查看域内其他机器 net group "domain computers" /domain
 ping 域内机器名称即可查看ip
+ping不通可能被主机拦截
 
 进入内网后距离靶标差多少网段
 ping 靶标  ping DNS 
