@@ -31,3 +31,8 @@ mimikatz.exe "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full" exit
 ## 解密码项目
 
   https://github.com/seventeenman/CallBackDump
+  
+  
+## 密码喷洒
+
+  https://github.com/Porchetta-Industries/CrackMapExec/releases/tag/v5.4.0
