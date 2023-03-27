@@ -4,3 +4,7 @@
   
   
   如reg,然后用CS  TCP Beacon正向链接，上CS管理端。
+  
+  
+  ![图片](https://user-images.githubusercontent.com/118274389/227825927-6e25bd40-e8b3-4204-a603-b182c2775ad0.png)
+
