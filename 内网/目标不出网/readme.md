@@ -7,4 +7,9 @@
   
   
   ![图片](https://user-images.githubusercontent.com/118274389/227825927-6e25bd40-e8b3-4204-a603-b182c2775ad0.png)
+  
+  
+  ## 其他打法
+  
+  https://forum.butian.net/share/1644
 
