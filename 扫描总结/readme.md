@@ -33,6 +33,10 @@
  可达网段扫描
  
     项目地址：https://github.com/shmilylty/netspy
+    
+ 进入内网后碰见防火墙扫描
+ 
+    项目地址:https://github.com/ybdt/post-hub/tree/main/%E8%BF%87%E9%98%B2%E7%81%AB%E5%A2%99%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%99%A8
    
 
  
