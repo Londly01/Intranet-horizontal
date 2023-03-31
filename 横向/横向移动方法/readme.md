@@ -33,7 +33,7 @@
   
 ## 0x05 其他横向技巧
 
-  Windows Server 2012及以上不提取密码登录Administrator桌面（PS登录这个桌面目的是看看Administrator桌面有啥，方便横向）
+  Windows Server 2012及以上不提取密码登录Administrator桌面（登录这个桌面目的是看看Administrator桌面有啥，方便横向）
   
   2012及高版本想要得到密码，只能通过修改注册表，然后让管理员重新登录主机才能得到密码，一般服务器重新进行登录时候很少。我们可以通过一些技巧得到Administrator权限，
   
