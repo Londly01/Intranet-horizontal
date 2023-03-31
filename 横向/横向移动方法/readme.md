@@ -42,8 +42,11 @@
   此时想要得到Administrator权限步骤如下：
   
   1.psexec启动一个system权限的cmd  命令：psexec.exe -s -i cmd.exe  
+  
   2.query user 
+  
   3.查看administrator会话id   
+  
   4.tscon 1 切换会话id为Administrator权限
   
   
