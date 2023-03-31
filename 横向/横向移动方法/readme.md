@@ -28,6 +28,8 @@
 
 ## 0x04 横向移动方法5_远控攻击
 
+  远控攻击就是给目标装一些免安装的远控软件，例如：向日葵、todesk
+
   https://github.com/wafinfo/Sunflower_get_Password
   
   
