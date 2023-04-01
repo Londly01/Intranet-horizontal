@@ -81,6 +81,18 @@
   WMI的全名为（Windows Management Instrumentation）由于安全厂商开始将PsExec加入了黑名单，所以攻击者暴露的可能性陡然增加。根据研究情况来看，Windows操作系统默认不会将WMI的   操作记录到日志当中，而且因为采用的是无文件攻击，所以导致WMI具有极高的隐蔽性。由此，越来越多的APT开始使用WMI进行攻击，利用WMI可以进行信息收集、探测、反病毒、虚拟机检测、命令执   行、权限持久化等操作。
   Windows操作系统都支持WMI。WMI是由一系列工具集组成的，可以在本地或者远程管理计算机系统。通过135端口进行利用，支持用户名明文或者hash的方式进行认证，并且该方法不会在目标日志系   统留下痕迹。
   
+  利用系统自带的wmi进行明文横向扩展
+  
+  wmic /node:192.168.3.144 /user:administrator /password:admin!@#45 process call create "md.exe /c ipconfig >C:\3.txt"
+  
+  在使用自带的wmic时，无回显，ipconfig这条命令显示的内容保存在3.txt文件中，并且是在对方的主机中，较为鸡肋。
+
+## 0x06 利用impacket工具包中的wmiexec进行横向移动
+
+   命令：wmiexec ./Administrator:admin!@#45@192.168.3.144 "whoami"
+   
+   
+  
   
 ## 0x06 其他横向技巧
 
