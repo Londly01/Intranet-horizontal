@@ -55,6 +55,8 @@
       impacket工具包里有个psexec，可进行密文传递攻击，下载地址：https://github.com/maaaaz/impacket-examples-windows
       
       psexec -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.144
+      
+      这块记录给自己留个作业，可以写个工具，针对不同的用户和密码进行组合后进行喷洒。
     
     4.smbexec无需IPC连接进行横向移动
     
