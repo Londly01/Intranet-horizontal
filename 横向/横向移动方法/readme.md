@@ -119,6 +119,7 @@
      
      4.利用at启动该bat脚本 at \\192.168.1.144 20:05 c:\adduser.bat （有的系统已经不使用at命令，可以尝试其他命令进行启动，如schtasks）
  
+     参考：https://cloud.tencent.com/developer/article/1743842
  
    
   
