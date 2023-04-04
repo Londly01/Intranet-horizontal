@@ -29,6 +29,8 @@
     
  内网扫描fscan
     项目地址：https://github.com/shadow1ng/fscan
+    
+    修改后的fscan https://github.com/h0nayuzu/Fscan_BaihuaSec
   
  可达网段扫描
  
