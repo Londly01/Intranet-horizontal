@@ -5,7 +5,6 @@
 ![图片](https://user-images.githubusercontent.com/118274389/229700985-35b5534e-3c49-4a54-81ac-606ab91fa106.png)
 
 
-![图片](https://user-images.githubusercontent.com/118274389/229702859-8a6ec055-6179-4cee-8aee-8013ea98d166.png)
 
 
 
