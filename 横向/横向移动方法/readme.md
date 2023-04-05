@@ -111,6 +111,14 @@
  
   
   ![图片](https://user-images.githubusercontent.com/118274389/230065346-c65c7e13-8569-496a-8409-a3718fcf566e.png)
+  
+   在软件根目录产生的密码信息
+  
+   [general]
+
+   host = https://xx.com
+   name = 12222424
+   tmp = 2232
 
   
   
