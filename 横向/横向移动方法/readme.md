@@ -105,6 +105,14 @@
 
   https://github.com/wafinfo/Sunflower_get_Password
   
+  不过目前向日葵、todesk不是很好用，发现了一个小巧的软件GoToHTTP
+  
+  官方地址 http://www.gotohttp.com/ 
+ 
+  
+  ![图片](https://user-images.githubusercontent.com/118274389/230065346-c65c7e13-8569-496a-8409-a3718fcf566e.png)
+
+  
   
 ## 0x06 利用WMI进行横向移动攻击
 
