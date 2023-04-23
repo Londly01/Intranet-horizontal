@@ -19,7 +19,22 @@
 ## 0x01 FinalShell工具
 
    /Users/用户名/Library/FinalShell/conn
+   
    /Users/用户名/AppData/Local/finalshell/conn
+   
    ~/Library/FinalShell/conn/xxxxxx/xxxxxx_connect_config.json
    
    解密程序FinalShellDecodePass ：https://github.com/jas502n/FinalShellDecodePass
+   
+## 0x02 NextSSH工具
+
+   Windows: %APPDATA%\NextSSH\config.json
+   
+   macOS: ~/Library/Application Support/NextSSH/config.json
+## 0x03 向日葵工具
+
+   安装版：C:\Program Files\Oray\SunLogin\SunloginClient\config.ini
+   
+   便携版(绿色版)：C:\ProgramData\Oray\SunloginClient\config.ini
+   
+   参考地址：https://forum.butian.net/share/797
