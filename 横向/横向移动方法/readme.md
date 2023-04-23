@@ -175,10 +175,17 @@
  
       参考：https://cloud.tencent.com/developer/article/1743842
  
-   
+## 0x11 基于AWS横向移动技巧
+
+   该方法原理是在获得一个凭据（AK、SK等）的前提下，枚举所有可访问资源，再通过可控制资源获得更多的凭据，获得更多资源控制权。
+
+   参考该文章：https://mp.weixin.qq.com/s/Q0iiRJ53BwuU4LHynR4qWQ
+
+## 0x12 基于SCCM进行横向移动
+
+    参考文章https://mp.weixin.qq.com/s/uzcJGFrxLp40aufzoMfD6Q
   
-  
-## 0x10 其他横向技巧
+## 0x13 其他横向技巧
 
   Windows Server 2012及以上不提取密码登录Administrator桌面（登录这个桌面目的是看看Administrator桌面有啥，方便横向）
   
@@ -197,7 +204,7 @@
   4.tscon 1 切换会话id为Administrator权限
   
   
-  ## 0x11 基于漏洞横向移动方法
+  ## 0x14 基于漏洞横向移动方法
   
   MS14-068 这个洞的危害很大，可以在任意域用户提权到域管
   适用版本：server2000以上 
